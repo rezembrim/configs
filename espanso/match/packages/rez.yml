@@ -1,0 +1,32 @@
+matches:
+  - trigger: 'rdps'
+    replace: 'Rezembrim de Paula Soares'
+
+  - trigger: 'hbbp'
+    replace: 'Hiranete Batista Bezerra de Paula'
+  
+  - trigger: 'endr'
+    replace: |
+              Rua São Paulo, 186, Alecrim
+              59037-460
+              Natal, RN - Brasil  
+  
+  - trigger: 'hmeye'
+    replace: '( ≖.≖)'
+
+  - trigger: 'lnfc'
+    replace: '( ͡° ͜ʖ ͡°)'
+    
+  - trigger: '/mono'
+    replace: '```'
+
+  - trigger: 'abtps'
+    replace: 'about:preferences#search'
+
+  - trigger: 'shrug'
+    replace: '¯\_(ツ)_/¯'
+
+  - trigger: 'slatt'
+    replace: |
+              Caso haja reincidência do mesmo problema, reabrir este chamado.
+              Solicitação atendida, o chamado pode ser fechado.
