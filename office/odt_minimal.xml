@@ -1,0 +1,30 @@
+<Configuration ID="7c8e3b2d-63ab-49b9-9d3e-8e3a9d6f977f">
+  <Info Description="" />
+  <Add OfficeClientEdition="64" Channel="Current">
+    <Product ID="O365ProPlusEEANoTeamsRetail">
+      <Language ID="en-us" />
+      <ExcludeApp ID="Access" />
+      <ExcludeApp ID="Groove" />
+      <ExcludeApp ID="Lync" />
+      <ExcludeApp ID="OneDrive" />
+      <ExcludeApp ID="Outlook" />
+      <ExcludeApp ID="Publisher" />
+      <ExcludeApp ID="Bing" />
+    </Product>
+    <Product ID="ProofingTools">
+      <Language ID="pt-br" />
+    </Product>
+  </Add>
+  <Updates Enabled="TRUE" />
+  <RemoveMSI />
+  <AppSettings>
+    <Setup Name="Company" Value="IFRN" />
+    <User Key="software\microsoft\office\16.0\common\internet" Name="opendirectlyinapp" Value="1" Type="REG_DWORD" App="office16" Id="L_OpenDirectlyInApp" />
+    <User Key="software\microsoft\office\16.0\excel\options" Name="disablesaveaslosswarningopendocumentspreadsheet" Value="1" Type="REG_DWORD" App="excel16" Id="L_TurnOffFileFormatCompatiblityDialogForODS" />
+    <User Key="software\microsoft\office\16.0\onenote\options\other" Name="shownotecontainers" Value="1" Type="REG_DWORD" App="onent16" Id="L_ShowNoteContainers" />
+    <User Key="software\microsoft\office\16.0\onenote\options\pen" Name="userulelines" Value="1" Type="REG_DWORD" App="onent16" Id="L_Createallnewpageswithrulelines" />
+    <User Key="software\microsoft\office\16.0\common\toolbars\word" Name="allowselectionfloaties" Value="0" Type="REG_DWORD" App="word16" Id="L_AllowSelectionFloaties" />
+    <User Key="software\microsoft\office\16.0\word\options" Name="disablesaveaslosswarningopendocumenttext" Value="1" Type="REG_DWORD" App="word16" Id="L_DoNotDisplayFileFormatCompatiblityDialogForODT" />
+  </AppSettings>
+  <Display Level="Full" AcceptEULA="TRUE" />
+</Configuration>
