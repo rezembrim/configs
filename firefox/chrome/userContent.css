@@ -1,0 +1,3 @@
+@-moz-document url(about:newtab), url(about:home), url(about:privatebrowsing) {
+.logo-and-wordmark{display:none!important;}
+}
