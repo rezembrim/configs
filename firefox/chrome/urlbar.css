@@ -1,14 +1,18 @@
 /* Center text on urlbar */
 #urlbar #urlbar-input { text-align: center !important;}
 
-/* Modifies the urlbar text color based on connection type - "normal" https: won't be mdofied */
+/* Modifies the urlbar text color based on connection type, https won't be modified */
+
 /* Mixed content including neterror */
 #identity-box[pageproxystate="valid"].unknownIdentity ~ .urlbar-input-box{ color: orange }
+
 /* http: and potentially some other insecure connections like ftp: */
 #identity-box[pageproxystate="valid"].notSecure ~ .urlbar-input-box{ color: orangered }
+
 /* Extension pages */
 #identity-box[pageproxystate="valid"].extensionPage ~ .urlbar-input-box{ color: violet }
-/* Internal about: and chrome:// urls (includes reader-view) */
+
+/* Internal about:// and chrome:// urls (includes reader-view) */
 #identity-box[pageproxystate="valid"].localResource ~ .urlbar-input-box,
 #identity-box[pageproxystate="valid"].chromeUI ~ .urlbar-input-box{ color: dodgerblue }
 
@@ -36,5 +40,5 @@
   outline-offset: -2px
 }
 /* These might potentially cause some issues, but are needed to make the border extend the border to the full popup when urlabar popup is open */
-#urlbar[open] > #urlbar-input-container{ position: static !important; }
-#urlbar[open] > #urlbar-background{ z-index: -1 !important; }
+/* #urlbar[open] > #urlbar-input-container{ position: static !important; } */
+/* #urlbar[open] > #urlbar-background{ z-index: -1 !important; } */
