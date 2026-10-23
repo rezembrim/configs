@@ -40,5 +40,5 @@
   outline-offset: -2px
 }
 /* These might potentially cause some issues, but are needed to make the border extend the border to the full popup when urlabar popup is open */
-/* #urlbar[open] > #urlbar-input-container{ position: static !important; } */
-/* #urlbar[open] > #urlbar-background{ z-index: -1 !important; } */
+#urlbar[open] > #urlbar-input-container{ position: static !important; }
+#urlbar[open] > #urlbar-background{ z-index: -1 !important; }
